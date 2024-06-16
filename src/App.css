@@ -1,0 +1,155 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  background-color: #6e12a3;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;    /* Center the content vertically */
+  position: fixed;
+  top: 0;
+  z-index: 1; /* Ensure the navbar is always on top */
+}
+
+.navbar img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+
+/* App container */
+.App {
+  width: 100%;
+  margin-top: 80px; /* Space for the fixed navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+/* Task input and button */
+.addTask {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.addTask input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.addTask button {
+  padding: 10px;
+  border: none;
+  background-color: #6e12a3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addTask button:hover {
+  background-color: #0b010f;
+}
+
+/* Task list */
+.list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.taskItem h1 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.taskItem button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.taskItem button:hover {
+  background-color: #d32f2f;
+}
