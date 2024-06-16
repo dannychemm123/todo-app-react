@@ -30,12 +30,24 @@ function App() {
     const task = {
       id: uuidv4(),
       taskName: newTask,
+      completed: false
     };
     const newTodoList = [task, ...todoList];
     setTodoList(newTodoList);
     setNewTask(""); // Clear the input field after adding a task
   };
+  const completeTask = (id) => {
+    setTodoList(todoList.map((task)=>{ 
+    
+    if (task.id ===id){
+      return {...task, completed:true}
+    } else {
+      return task;
+    }
 
+    }))
+
+  }
   const deleteTask = (id) => {
     const newTodoList = todoList.filter((task) => task.id !== id);
     setTodoList(newTodoList);
@@ -58,7 +70,8 @@ function App() {
 
         <div className="list">
           {todoList.map((task) => (
-           <Task taskName = {task.taskName} id = {task.id} deleteTask = {deleteTask}/>
+           <Task taskName = {task.taskName} id = {task.id} deleteTask = {deleteTask} 
+           completeTask = {completeTask} completed ={task.completed}/>
           ))}
         </div>
       </div>
