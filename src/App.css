@@ -51,7 +51,7 @@ body {
 /* Navbar styles */
 .navbar {
   width: 100%;
-  background-color: #6e12a3;
+  background-color: #edecee;
   padding: 15px;
   color: white;
   display: flex;
@@ -71,6 +71,7 @@ body {
 .navbar h1 {
   margin: 0;
   font-size: 24px;
+  color: #0b010f;
 }
 
 
@@ -90,7 +91,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 300px;
+  width: 700px;
 }
 
 /* Task input and button */
@@ -139,15 +140,23 @@ body {
   margin: 0;
   font-size: 16px;
   color: #333;
+  
 }
 
 .taskItem button {
   padding: 5px 10px;
   border: none;
-  background-color: #f44336;
+  background-color: #ce1a0e; /*App container */
   color: white;
   border-radius: 4px;
   cursor: pointer;
+
+}
+.taskItem .comp{
+  background-color: #1db0dd;
+}
+.taskItem .comp:hover{
+  background-color: #1db0dd;
 }
 
 .taskItem button:hover {

@@ -32,9 +32,12 @@ function App() {
       taskName: newTask,
       completed: false
     };
+
     const newTodoList = [task, ...todoList];
     setTodoList(newTodoList);
+
     setNewTask(""); // Clear the input field after adding a task
+    
   };
   const completeTask = (id) => {
     setTodoList(todoList.map((task)=>{ 
